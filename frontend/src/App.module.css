@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main img {
+  height: 100px;
+  width: 100px;
+}
+
+.searchBox {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+input {
+  height: 30px;
+  width: 50%;
+  margin: auto;
+  padding-inline: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-color: #313131;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-inline: 10px;
+}
+
+.result {
+  width: 50%;
+  margin: auto;
+}
+
+.result p a {
+  text-decoration: none;
+}
