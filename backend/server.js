@@ -6,7 +6,7 @@ import crypto from "crypto";
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://shorten-url-1-ysy2.onrender.com" }));
 const PORT = 5000;
 
 const urlMap = {};
