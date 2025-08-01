@@ -27,9 +27,12 @@ function App() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/shorten", {
-        url: inp,
-      });
+      const res = await axios.post(
+        "https://shorten-url-h3xy.onrender.com/shorten",
+        {
+          url: inp,
+        }
+      );
 
       setAns(res.data.shortUrl);
       setOriginalUrl(inp);

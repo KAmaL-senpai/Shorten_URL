@@ -37,7 +37,7 @@ app.post("/shorten", async (req, res) => {
 
     urlMap[slug] = longUrl;
 
-    res.json({ shortUrl: `http://localhost:5000/${slug}` });
+    res.json({ shortUrl: `https://shorten-url-h3xy.onrender.com/${slug}` });
   } catch (err) {
     console.error(err);
     res.status(400).json({ error: "Unable to fetch or parse title" });
