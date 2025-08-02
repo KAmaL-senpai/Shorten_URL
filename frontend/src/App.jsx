@@ -65,7 +65,6 @@ function App() {
                 {ans.replace("/shorten-url-h3xy.onrender.com/", "")}
               </a>
             </p>
-            {ans}
             <button
               onClick={() => {
                 navigator.clipboard.writeText(ans);
