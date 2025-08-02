@@ -62,7 +62,7 @@ function App() {
           <div className={styles.result}>
             <p>
               <a href={originalUrl} target="_blank" rel="noopener noreferrer">
-                {ans.replace("shorten-url-h3xy.onrender.com/", "")}
+                {ans.replace("/shorten-url-h3xy.onrender.com/", "")}
               </a>
             </p>
             <button
