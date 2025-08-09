@@ -28,7 +28,7 @@ function App() {
 
     try {
       const res = await axios.post(
-        "https://shorten-url-h3xy.onrender.com/shorten",
+        "http://localhost:5000/shorten",
         {
           url: inp,
         }
@@ -40,7 +40,7 @@ function App() {
       setErrInp("");
       setInp("");
     } catch (error) {
-      setErrInp("Failed to shorten link");
+      setErrInp("Invalid link");
       console.error(error);
     }
   };
