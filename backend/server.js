@@ -6,7 +6,7 @@ import crypto from "crypto";
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "https://shorten-url-1-ysy2.onrender.com" }));
+app.use(cors({ origin: "http://localhost:5173" }));
 const PORT = 5000;
 
 const urlMap = {};
@@ -37,7 +37,7 @@ app.post("/shorten", async (req, res) => {
 
     urlMap[slug] = longUrl;
 
-    res.json({ shortUrl: `https://shorten-url-h3xy.onrender.com/${slug}` });
+    res.json({ shortUrl: `http://localhost:5000/${slug}` });
   } catch (err) {
     console.error(err);
     res.status(400).json({ error: "Unable to fetch or parse title" });
